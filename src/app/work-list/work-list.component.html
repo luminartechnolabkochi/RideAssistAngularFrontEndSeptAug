@@ -1,0 +1,29 @@
+
+
+<table class="table mt-3">
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Amount</th>
+        <!-- <th>Action</th> -->
+    </tr>
+    <tbody>
+        <tr *ngFor="let work of works">
+
+            <td>{{work.title}}</td>
+            <td>{{work.description}}</td>
+            <td>{{work.amount}}</td>
+            <!-- <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td> -->
+
+        </tr>
+
+        <tr>
+            <td></td>
+            <td class="text-end"><span class="fw-bold">Total</span> :</td>
+            <td>{{total}}</td>
+        </tr>
+    </tbody>
+</table>
