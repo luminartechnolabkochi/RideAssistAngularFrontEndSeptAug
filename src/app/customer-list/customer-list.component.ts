@@ -66,6 +66,8 @@ export class CustomerListComponent {
       })
       doc.text("Invoice",10,10)
 
+      doc.text("total Amount 4500",100,200)
+
     doc.save('table.pdf')
   }
 
